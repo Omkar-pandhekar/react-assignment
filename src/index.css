@@ -1,0 +1,60 @@
+@import "primereact/resources/themes/saga-blue/theme.css"; /* choose a PrimeReact theme */
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+@import "tailwindcss";
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 1rem;
+  background: #f0f0f1;
+}
+.app-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Force gridlines to be visible */
+.p-datatable .p-datatable-tbody > tr > td {
+  border: 1px solid #e5e7eb !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  border: 1px solid #e5e7eb !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.p-datatable .p-datatable-thead > tr {
+  border-bottom: 2px solid #d1d5db !important;
+}
+
+/* Additional gridlines styling for the specific table */
+.gridlines-table {
+  border-collapse: collapse !important;
+}
+
+.gridlines-table .p-datatable-tbody > tr > td {
+  border-right: 1px solid #e5e7eb !important;
+  border-left: 1px solid #e5e7eb !important;
+  border-top: 1px solid #e5e7eb !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.gridlines-table .p-datatable-thead > tr > th {
+  border-right: 1px solid #e5e7eb !important;
+  border-left: 1px solid #e5e7eb !important;
+  border-top: 1px solid #e5e7eb !important;
+  border-bottom: 2px solid #d1d5db !important;
+  background-color: #f9fafb !important;
+}
